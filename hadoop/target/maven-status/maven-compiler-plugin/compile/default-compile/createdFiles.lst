@@ -1,0 +1,7 @@
+com\test\nkhadoop\mr\MyWC01.class
+com\test\nkhadoop\mr\MyReverseIndex$Counter.class
+com\test\nkhadoop\mr\MyWC01$WCGenderMapper.class
+com\test\nkhadoop\mr\MyReverseIndex$RIReducer.class
+com\test\nkhadoop\mr\MyWC01$WCGenderReducer.class
+com\test\nkhadoop\mr\MyReverseIndex$RIMapper.class
+com\test\nkhadoop\mr\MyReverseIndex.class
