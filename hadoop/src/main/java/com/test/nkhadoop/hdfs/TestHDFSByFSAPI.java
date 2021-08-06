@@ -19,7 +19,7 @@ public class TestHDFSByFSAPI {
         System.setProperty("HADOOP_USER_NAME", "vagrant");
         // 判断当前执行环境是否为 windows,如果是, 设置下载的winutils中的对应版本的 windows hadoop 可执行文件的位置
         // 位置: 可执行文件所在的 bin 目录的所在的位置
-        if (System.getProperty("os.name").toLowerCase().indexOf("windows") != -1)
+        if (System.getProperty("os.name").toLowerCase().contains("windows"))
             System.setProperty("hadoop.home.dir", "c:/dev/hadoop");
     }
     public static void main(String[] args) throws IOException {

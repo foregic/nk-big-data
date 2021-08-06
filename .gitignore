@@ -1,1 +1,5 @@
 /hadoop/.idea/
+/hadoop/nkhadoop.iml
+/hadoop/input
+/hadoop/output
+/hadoop/target

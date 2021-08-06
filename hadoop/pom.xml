@@ -21,6 +21,12 @@
             <artifactId>hadoop-client</artifactId>
             <version>3.2.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.ansj</groupId>
+            <artifactId>ansj_seg</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+
     </dependencies>
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -30,7 +36,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.0.2</version>
                     <configuration>
-                        <finalName>myri</finalName>
+                        <finalName>myhadoop</finalName>
                         <!-- 不打包本地修改的 NativeIO 类 -->
                         <excludes>
                             <exclude>
@@ -39,11 +45,20 @@
                         </excludes>
                         <archive>
                             <manifest>
+                                <!--是否要把第三方jar放到manifest的classpath中-->
+                                <addClasspath>true</addClasspath>
+                                <!--生成的manifest中classpath的前缀，
+                                 因为要把第三方jar放到lib目录下，
+                                所以classpath的前缀是lib/-->
+                                <classpathPrefix>lib/</classpathPrefix>
+
+                                <!-- 执行的主程序路径 -->
                                 <!-- 指定入口函数 -->
-                                <mainClass>com.test.nkhadoop.mr.MyWC01</mainClass>
+                                <mainClass>com.test.nkhadoop.mr.MyStatics</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
+
                 </plugin>
             </plugins>
         </pluginManagement>

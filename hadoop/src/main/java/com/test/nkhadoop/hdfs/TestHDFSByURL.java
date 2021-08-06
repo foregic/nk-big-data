@@ -19,7 +19,7 @@ public class TestHDFSByURL {
     }
 
     // 指定 hdfs 协议格式的 url, 可以在 hosts 文件配置 master 和 ipaddress 映射, rpc 端口是 9000
-    private static String hdfsURL = "hdfs://192.168.43.101:9000/input/core-site.xml";
+    private static final String hdfsURL = "hdfs://192.168.43.101:9000/input/core-site.xml";
 
     public static void main(String[] args) throws IOException {
         URL url = new URL(hdfsURL);
