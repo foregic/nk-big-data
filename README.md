@@ -1,7 +1,7 @@
 # nk-big-data
 大数据企业实训
 
-spider部分为爬虫，由葛腾航负责
+spider部分为爬虫，由罗都负责
 
 hadoop部分为数据处理，由罗都负责
 
